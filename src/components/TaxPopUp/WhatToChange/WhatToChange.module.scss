@@ -4,6 +4,9 @@
 
 .Title{
     margin: 0px 0px 24px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
 }
 
 .ButtonContainer{
@@ -13,19 +16,27 @@
 .PaymentButton{
     display: flex;
     align-items: center;
-    width: 57px;
     height: 36px;
     margin-right: 8px;
     padding: 6px 12px;
+    border: none;
     border-radius: 50px;
     color: black;
     background: #DFE3E6;
-    background: #DFE3E6;
     cursor:pointer;
+    font-size: 14px;
 }
 
-.PaymentButton:hover{
-    width: 73px;
+.PaymentButtonActive{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    margin-right: 8px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
     color: white;
+    font-size: 14px;
     background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
 }

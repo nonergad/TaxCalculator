@@ -9,6 +9,7 @@ export default function TaxPopUp(porps) {
   const [totalTax, setTotalTax] = useState([]);
   const [salary, setSalary] = useState('');
   const [emptyFlag, setEmptyFlag] = useState(false);
+  const [decreaseStatus, setDecreaseStatus] = useState(false);
 
   
   let year = 1;
@@ -38,17 +39,17 @@ export default function TaxPopUp(porps) {
   console.log(emptyFlag)
     return(
         <div className={style.TaxPopUpMain}>
-            <button className={style.XButton} onClick={porps.func} >x</button>
+            <button className={style.XButton} onClick={porps.func} ></button>
             <p className={style.Title}>Налоговый вычет</p>
             <p className={style.Article}>Используйте налоговый вычет чтобы погасить ипотеку досрочно. Размер налогового вычета составляетне более 13% от своего официального годового дохода.</p>
-            <p>Ваша зарплата в месяц</p>
+            <p className={style.Text}>Ваша зарплата в месяц</p>
             <input className={style.InputTax} value={salary} placeholder='Введите данные' onKeyDown={(e) => calculateHandler(e)} onChange={(e)=>setSalary(e.target.value)}></input>
             {emptyFlag && <p>Поле обязательно для заполнения</p>}
             <button className={style.CalculateButton} onClick={(e) => calculateHandler(e)}>Рассчитать</button>
             {calculateFlag && <TaxValue totalTax={totalTax}/>}
 
             <div>
-                <WhatToChange/>
+                <WhatToChange decreaseStatus={decreaseStatus} setDecreaseStatus={setDecreaseStatus}/>
             </div>
             <div className={style.AddButton}>Добавить</div>
         </div>

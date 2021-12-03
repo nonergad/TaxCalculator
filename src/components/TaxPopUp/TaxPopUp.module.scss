@@ -1,22 +1,29 @@
 .TaxPopUpMain{
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 100vh;
     background:white;
     padding: 16px;
 }
 
 .XButton{
+    align-self: flex-end;
     width: 24px;
     height: 24px;
-    // background-image: url('src/img/XButton.svg';)
+    background: url('../../../src/img/XButton.svg') no-repeat center / contain;
+    border: 0px;
 }
 
 .Title{
-    width: 150px;
-    height: 24px;
-    size: 18px;
+    font-size: 18px;
     line-height: 24px;
-    weight: 500;
+    font-weight: bold;
+}
+
+.Text{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
 }
 
 .Article{
@@ -39,6 +46,7 @@
 }
 
 .CalculateButton{
+    align-self: flex-start;
     margin-bottom: 24px;
     padding: 0px;
     background: transparent;
@@ -46,7 +54,7 @@
     border: 0px solid transparent;
     text-shadow: 0px 0px 0px transparent;
     color: #EA0029;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     line-height: 24px;
 }

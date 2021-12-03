@@ -1,12 +1,32 @@
 @media screen and (max-width:320px) {
+    p{
+        margin: 0px;
+    }
+
     .LineContainer{
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Line{
+        display: flex;
         align-items: center;
-        flex-direction: row;
     }
 
     .CheckBox{
         width: 20px;
         height: 20px;
+        margin-right: 11px;
+    }
+
+    .CheckBox:checked{
+        width: 100px;
+    }
+
+    .DivideLine{
+        width: 288px;
+        height: 1px;
+        background: #DFE3E6;
     }
 }

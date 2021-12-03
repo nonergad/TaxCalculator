@@ -8,8 +8,11 @@ export default function TaxValue(props) {
             {props.totalTax.map((element, index) => {
                 return(
                     <div className={style.LineContainer} key={index}>
-                        <input className={style.CheckBox} type='checkbox'></input>
-                        <p>{element} рублей в {index + 1}-ый год</p>
+                        <div className={style.Line}>
+                            <input className={style.CheckBox} type='checkbox'></input>
+                            <p>{element} рублей в {index + 1}-ый год</p>
+                        </div>
+                        <div className={style.DivideLine}></div>
                     </div>
                 )
             })}
