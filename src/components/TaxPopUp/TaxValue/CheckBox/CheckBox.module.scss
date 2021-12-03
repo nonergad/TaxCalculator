@@ -1,0 +1,36 @@
+.CheckBox{
+    display: none;
+}
+
+.BlankCheckBox{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #DFE3E6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: white;
+}
+
+.BlankCheckBox:hover{
+    border: 1px solid #000000;
+}
+
+.BlankCheckBox::before{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: "";
+    display: block;
+    background: url(../../../../img/CheckBox.svg);
+    opacity: 0;
+    transition: 10ms;
+}
+
+.CheckBox:checked + .BlankCheckBox::before{
+    opacity: 1;
+}

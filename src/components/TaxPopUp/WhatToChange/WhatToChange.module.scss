@@ -1,42 +1,68 @@
-.Container{
-    margin-bottom: 140px;
-}
+    .Container{
+        margin-top: 28px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .Title{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: bold;
+        margin-right: 32px;
+    }
+    
+    .ButtonContainer{
+        display: flex;
+    }
+    
+    .PaymentButton{
+        display: flex;
+        align-items: center;
+        height: 36px;
+        padding: 0px 12px;
+        border: none;
+        border-radius: 50px;
+        color: black;
+        background: #DFE3E6;
+        cursor:pointer;
+        font-size: 14px;
+    }
+    
+    .PaymentButton:first-child{
+        margin-right:8px;
+    }
+    
+    .PaymentButtonActive{
+        display: flex;
+        align-items: center;
+        height: 36px;
+        padding: 0px 12px;
+        border: none;
+        border-radius: 50px;
+        cursor:pointer;
+        color: white;
+        font-size: 14px;
+        background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+    }
+    
+    .PaymentButtonActive:first-child{
+        margin-right:8px;
+    }    
 
-.Title{
-    margin: 0px 0px 24px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: bold;
-}
+    @media (min-width: 768px) and (max-width: 1024px) {
 
-.ButtonContainer{
-    display: flex;
-}
+        .Title{
+            margin-right: 76px;
+        }
+    }
 
-.PaymentButton{
-    display: flex;
-    align-items: center;
-    height: 36px;
-    margin-right: 8px;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 50px;
-    color: black;
-    background: #DFE3E6;
-    cursor:pointer;
-    font-size: 14px;
-}
+    @media screen and (max-width: 767px) {
+        .Container{
+            align-items: flex-start;
+            flex-direction: column;
+        }
 
-.PaymentButtonActive{
-    display: flex;
-    align-items: center;
-    height: 36px;
-    margin-right: 8px;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 50px;
-    cursor:pointer;
-    color: white;
-    font-size: 14px;
-    background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
-}
+        .ButtonContainer{
+            margin-top: 24px;
+        }
+    }

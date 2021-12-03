@@ -1,32 +1,46 @@
-@media screen and (max-width:320px) {
-    p{
-        margin: 0px;
-    }
+p{
+    margin: 0px;
+}
 
-    .LineContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.Container{
+    width: auto;
+    margin-bottom: 0;
+}
 
-    .Line{
-        display: flex;
-        align-items: center;
-    }
+.LineContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
-    .CheckBox{
-        width: 20px;
-        height: 20px;
-        margin-right: 11px;
-    }
+.Line{
+    display: flex;
+    align-items: center;
+}
 
-    .CheckBox:checked{
-        width: 100px;
-    }
+.Text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
 
-    .DivideLine{
-        width: 288px;
-        height: 1px;
-        background: #DFE3E6;
-    }
+.PayWrapper{
+    height: 252px;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+.DivideLine{
+    width: 288px;
+    height: 1px;
+    background: #DFE3E6;
+}
+
+.Money{
+    margin-left: 11px;
+}
+
+.Year{
+    margin: 16px 0px 16px 5px ;
+    color: #808080;
 }
