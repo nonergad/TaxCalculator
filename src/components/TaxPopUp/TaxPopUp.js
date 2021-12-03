@@ -12,12 +12,10 @@ export default function TaxPopUp(porps) {
   const [decreaseStatus, setDecreaseStatus] = useState(false);
 
   
-  let year = 1;
-  let residue = 0;
-  
-  
+  let year = 1; 
+
   const calculateHandler = (event) => {
-    if(event.keyCode==13 || event.type === 'click'){
+    if(event.keyCode === 13 || event.type === 'click'){
         if (salary === '') {
             setEmptyFlag(true)
         } else {
@@ -36,7 +34,6 @@ export default function TaxPopUp(porps) {
   }
 
 
-  console.log(emptyFlag)
     return(
         <div className={style.TaxPopUpMain}>
             <div className={style.Top}>
@@ -48,12 +45,10 @@ export default function TaxPopUp(porps) {
                 {emptyFlag && <p>Поле обязательно для заполнения</p>}
                 <button className={style.CalculateButton} onClick={(e) => calculateHandler(e)}>Рассчитать</button>
                 {calculateFlag && <TaxValue totalTax={totalTax}/>}
-
                 <div>
                     <WhatToChange decreaseStatus={decreaseStatus} setDecreaseStatus={setDecreaseStatus}/>
                 </div>
             </div>
-
             <div className={style.AddButton}>Добавить</div>
         </div>
     )

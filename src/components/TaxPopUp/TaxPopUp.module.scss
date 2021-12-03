@@ -23,8 +23,8 @@
     }
     
     .Title{
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 28px;
+        line-height: 40px;
         font-weight: bold;
     }
     
@@ -33,8 +33,8 @@
         margin: 16px 0px 24px;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 24px;
         color: #808080;
     }
     
@@ -75,6 +75,9 @@
         width: 100%;
         height: 56px;
         min-height: 56px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
         color: white;
         background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
         box-shadow: 0px 0px 24px rgba(234, 0, 41, 0.33);
@@ -96,10 +99,6 @@
             width: 453px;
         }
 
-        .Title{
-            font-size: 28px;
-            line-height: 40px;
-        }
     }
 
     @media screen and (max-width: 767px) {
@@ -119,5 +118,21 @@
         .XButton{
             width: 24px;
             height: 24px;
+        }
+
+        .Title{
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .Article{
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .AddButton{
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
         }
     }

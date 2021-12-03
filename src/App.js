@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import style from'./App.module.scss';
 import Button from './components/Button/Button';
 import TaxPopUp from './components/TaxPopUp/TaxPopUp'
