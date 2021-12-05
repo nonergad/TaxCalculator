@@ -13,7 +13,7 @@ function App() {
   
   return (
     <div className={startFlag ? style.Main : style.MainChanged}>
-      {startFlag ? <Button func={startBtnHandler}></Button> : <TaxPopUp func={startBtnHandler}/>}
+      {startFlag ? <TaxPopUp func={startBtnHandler}/> :<Button func={startBtnHandler}></Button> }
     </div>
   );
 }
